@@ -1,0 +1,1 @@
+# django_static_FOLDER_static_FILE
