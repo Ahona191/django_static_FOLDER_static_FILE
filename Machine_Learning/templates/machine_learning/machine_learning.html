@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h1>Study Mart offering a {{c}} course. There have more than {{tl}} class & available {{st}} seats.
+         Finally needed for course complete time {{cd}}    </h1>
+    <!-- <h1>Study Mart offering a lot of free and paid courses</h1> -->  
+     <h2> 
+        <!--filter-->
+        {{c| upper }} 
+         {{c| lower }} 
+          {{c| capfirst }} 
+           {{c| length }} 
+           <!--tag--> 
+           <!--{% if z %} 
+           <h1> This is if part</h1>   
+           {% elif st == 20 %}
+
+           <h2> This is elif part</h2>
+           {% else %} 
+           <h2> This is else part</h2>
+           {% endif %}
+     </h2>--> 
+
+     {% for tn in names %}
+    {{forloop.counter}}{{ tn }}<br>
+{% endfor %}
+
+
+
+</body>
+</html>
